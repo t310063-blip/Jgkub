@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>學習歷程檔案</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#203655;
+    --accent:#d9c1a1;
+    --bg:#f6f1e5;
+    --card:#fefdfb;
+    --border:#e0d5c7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:var(--bg);
+    color:#2a2a2a;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    padding:80px 0;
+    background:linear-gradient(
+    135deg,
+    rgba(32,54,85,.08),
+    rgba(217,193,161,.08)
+    );
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Noto Serif TC',serif;
+    color:var(--primary);
+    font-size:3rem;
+}
+
+.hero p{
+    color:#666;
+}
+
+.stats{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.stat{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    border-top:4px solid var(--primary);
+}
+
+.stat h3{
+    color:var(--primary);
+    font-size:2rem;
+}
+
+.section{
+    padding:60px 0;
+}
+
+.section-title{
+    font-family:'Noto Serif TC',serif;
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.profile{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-bar{
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-fill{
+    height:100%;
+    background:linear-gradient(
+    90deg,
+    #203655,
+    #5a7a96
+    );
+}
+
+.timeline{
+    display:grid;
+    gap:20px;
+}
+
+.tag{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:50px;
+    background:rgba(32,54,85,.1);
+    color:var(--primary);
+    margin-right:6px;
+    margin-top:6px;
+    font-size:.8rem;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="container">
+
+        <p>Learning Portfolio</p>
+
+        <h1>曾宥欣的學習歷程檔案</h1>
+
+        <p>桃園市私立大華高中 · 高中二年級</p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>12</h3>
+                <p>學習成果</p>
+            </div>
+
+            <div class="stat">
+                <h3>5</h3>
+                <p>競賽獲獎</p>
+            </div>
+
+            <div class="stat">
+                <h3>220h</h3>
+                <p>服務時數</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">關於我</h2>
+
+<div class="card profile">
+
+<div class="avatar">
+<img src="https://via.placeholder.com/300">
+</div>
+
+<div>
+<h3>曾宥欣</h3>
+
+<p>
+每一次的挑戰都是成長的機會，
+用熱情點燃學習的光芒。
+</p>
+
+<br>
+
+<p>
+我是來自大華高中的學生，
+喜歡數學與英文，
+也積極參與社團活動及服務學習，
+希望透過不斷探索，
+成為更好的自己。
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">核心能力</h2>
+
+<div class="card">
+
+<div class="skill">
+數學分析 92%
+<div class="skill-bar">
+<div class="skill-fill" style="width:92%"></div>
+</div>
+</div>
+
+<div class="skill">
+英文溝通 88%
+<div class="skill-bar">
+<div class="skill-fill" style="width:88%"></div>
+</div>
+</div>
+
+<div class="skill">
+團隊合作 96%
+<div class="skill-bar">
+<div class="skill-fill" style="width:96%"></div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">課程學習成果</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>社會心理學自主學習</h3>
+<p>
+探討從眾效應、旁觀者效應等心理學概念，
+了解群體如何影響個體決策。
+</p>
+
+<span class="tag">自主學習</span>
+<span class="tag">心理學</span>
+</div>
+
+<div class="card">
+<h3>探究與實作</h3>
+<p>
+透過研究設計、資料蒐集與分析，
+培養科學探究能力與批判思考能力。
+</p>
+
+<span class="tag">探究實作</span>
+<span class="tag">研究能力</span>
+</div>
+
+<div class="card">
+<h3>英文話劇競賽</h3>
+<p>
+參與劇本設計與演出，
+培養英語表達與團隊合作能力。
+</p>
+
+<span class="tag">英文</span>
+<span class="tag">戲劇</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">多元表現</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>英文戲劇社社長</h3>
+<p>
+帶領社員進行排練與演出規劃，
+提升領導與協調能力。
+</p>
+</div>
+
+<div class="card">
+<h3>AMC 10 美國數學競賽</h3>
+<p>
+成功取得 AIME 資格，
+挑戰國際數學競賽。
+</p>
+</div>
+
+<div class="card">
+<h3>偏鄉課業輔導志工</h3>
+<p>
+累積超過 120 小時服務時數，
+協助學生提升學習成效。
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 學習歷程檔案
+</footer>
+
+</body>
+</html>
